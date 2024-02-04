@@ -13,9 +13,10 @@ This repository contains a Go program that decodes Bitcoin raw transactions usin
 To use the Bitcoin CLI Transaction Decoder, follow these steps:
 
 1. Clone the repository to your local machine.
-2. Run the `go run main.go` command, providing the Bitcoin raw transaction hex as an argument.
+2. Run `go mod tidy` to install the required dependencies.
 3. Run `go get -u github.com/btcsuite/btcd/wire` to install the `btcd` package.
-4. The program will decode the transaction and display the results in the terminal.
+4. Run the `go run main.go` command, providing the Bitcoin raw transaction hex as an argument in the func main.
+5. The program will decode the transaction and display the results in the terminal.
 
 Example:
 ```bash
